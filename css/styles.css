@@ -58,8 +58,11 @@ main img {
 }
 
 .special img {
-    width: 73%; /* Set width to 100% for responsive behavior */
-    height: auto; /* Maintain aspect ratio */
+    width: 342px;
+    height: 300px;
+}
+.special-content img{
+    max-width: 100%;
 }
 
 .reasons {
@@ -94,6 +97,11 @@ main img {
     border-radius: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     margin-bottom: 10px;
+}
+.weekly-sales{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 footer {
@@ -135,11 +143,17 @@ footer a:hover {
         width: 100%;
         height: auto;
     }
+    .weekly-sales {
+        flex-direction: row; /* Display in a row */
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
     footer {
         font-size: 1em; /* Increase font size for readability on smaller screens */
         padding: 15px 0; /* Add padding for better spacing */
     }
 }
+
 
 @media (max-width: 480px) {
     header {
@@ -150,6 +164,7 @@ footer a:hover {
         max-width: 100%;
         height: auto;
     }
+   
 
     footer {
         font-size: 0.8em;

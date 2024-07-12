@@ -111,10 +111,8 @@ footer a:hover {
     }
 
     nav a {
-        display: block;
-        width: 100%;
         padding: 10px;
-        font-size: 1.5em; /* Increase font size for navigation links on smaller screens */
+        font-size: 1.1em; /* Increase font size for navigation links on smaller screens */
     }
 
     .team-member {

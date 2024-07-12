@@ -5,7 +5,7 @@ body {
     background-color: #423636;
     font-family: Arial, sans-serif;
 }
-
+ 
 .container {
     width: 80%;
     margin: 0 auto;
@@ -116,9 +116,31 @@ footer a:hover {
     }
 
     nav a {
-        display: block;
-        width: 100%;
         padding: 10px;
-        font-size: 1.5em; /* Increase font size for navigation links on smaller screens */
+        font-size: 1.1em; /* Increase font size for navigation links on smaller screens */
+    }
+   
+}
+@media (max-width: 480px) {
+    header {
+        padding: 10px 0;
+    }
+
+    .reasons img {
+        max-width: 100%;
+        height: auto;
+    }
+   
+
+    footer {
+        font-size: 0.8em;
+    }
+
+    nav a {
+        font-size: 1.5em; /* Further increase font size for navigation links on very small screens */
+    }
+    footer {
+        font-size: 1.2em; /* Further increase font size for very small screens */
+        padding: 20px 0; /* Increase padding for better readability */
     }
 }

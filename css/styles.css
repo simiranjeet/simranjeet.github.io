@@ -125,6 +125,51 @@ footer a:hover {
     text-decoration: underline;
 }
 
+
+/* Style rules for form elements */
+
+fieldset{
+    background-color: #faebd73d;
+}
+fieldset, input {
+    margin-bottom: 2%;
+}
+
+fieldset legend {
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+label {
+    display: block;
+    padding-top: 3%;
+}
+
+form #submit {
+    margin: 0 auto;
+    display: block;
+    /*padding: 3%;*/
+    background-color: #b7b7e1;
+    font-size: 1em;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    font-size: 0.85em;
+    background-color: #2a1f14;
+    color: #f6eee4;
+    padding: 1% 0;
+}
+
+.form-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+}
+.btn{
+    grid-column: 1 / span 3;
+}
 /* Responsive Styles */
 @media (max-width: 768px) {
    /* nav a {
@@ -159,6 +204,12 @@ footer a:hover {
         font-size: 1em; /* Increase font size for readability on smaller screens */
         padding: 15px 0; /* Add padding for better spacing */
     }
+    form{
+        width: 70%;
+        margin:0 auto;
+    }
+
+
 }
 
 
@@ -172,7 +223,6 @@ footer a:hover {
         height: auto;
     }
    
-
     footer {
         font-size: 0.8em;
     }
@@ -184,4 +234,14 @@ footer a:hover {
         font-size: 1.2em; /* Further increase font size for very small screens */
         padding: 20px 0; /* Increase padding for better readability */
     }
+    .map {
+        height: 450px;
+        width: 345;
+    }
+    .form-grid{
+        display: block;
+    }
+
+   
 }
+

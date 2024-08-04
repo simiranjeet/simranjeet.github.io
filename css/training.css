@@ -121,6 +121,9 @@ footer a:hover {
         padding: 10px;
         font-size: 1.1em; /* Increase font size for navigation links on smaller screens */
     }
+    .tablet-desktop{
+        display: none;
+    }
    
 }
 @media (max-width: 480px) {
@@ -152,3 +155,27 @@ footer a:hover {
        display: none;
    }
 }
+.mobile-nav a {
+    color: #fff;
+    font-family: 'Francois One',sans-serif;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 3%;
+    display: block;
+}
+
+.mobile-nav a.menu-icon {
+    display: block;
+    position: absolute;
+    right: 0;
+     top: 0;
+}
+
+@media screen and (min-width: 550px) {
+    .mobile-nav {
+        display: none;
+    }
+}
+
+

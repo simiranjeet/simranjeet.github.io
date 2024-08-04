@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mirror Company</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
     <link rel="stylesheet" href="css/styles.css">
     
 </head>
@@ -12,7 +13,7 @@
     <header>
         <a href="index.html"><img src="images/banner2.jpg" alt="Company Banner"></a>
     </header>
-    <nav>
+    <nav class="tablet-desktop">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="team.html">Our Team</a>
@@ -21,6 +22,21 @@
         <a href="media.html">Media</a>
         <a href="faqs.html">FAQs</a>
         <a href="contact.html">Contact Us</a>
+    </nav>
+    <nav class="mobile-nav">
+        <div id="menu-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="team.html">Our Team</a>
+            <a href="specials.html">Specials</a>
+            <a href="training.html">Training</a>
+            <a href="media.html">Media</a>
+            <a href="faqs.html">FAQs</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <a class="menu-icon" onclick="hamburgur()">
+          <div>&#9776;</div>
+        </a>
     </nav>
     <main>
         <!-- <h1>Welcome to Mirror Magic Your Guide to every kind of mirror in market!</h1>
@@ -45,5 +61,6 @@
         Simranjeet Kaur - c0927703
     </footer>
 </body>
-<script type="text/javascript" src="scripts/script.js"></script>
+
+<script type="text/javascript"   src="scripts/script.js"></script>
 </html>

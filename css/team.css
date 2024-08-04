@@ -124,6 +124,9 @@ footer a:hover {
         margin-right: 0;
         margin-bottom: 10px;
     }
+    .tablet-desktop{
+        display: none;
+    }
 }
 
 @media (max-width: 480px) {
@@ -136,3 +139,28 @@ footer a:hover {
         padding: 15px 0; /* Add padding for better spacing */
     }
 }
+
+.mobile-nav a {
+    color: #fff;
+    font-family: 'Francois One',sans-serif;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 3%;
+    display: block;
+}
+
+.mobile-nav a.menu-icon {
+    display: block;
+    position: absolute;
+    right: 0;
+     top: 0;
+}
+
+@media screen and (min-width: 550px) {
+    .mobile-nav {
+        display: none;
+    }
+}
+
+

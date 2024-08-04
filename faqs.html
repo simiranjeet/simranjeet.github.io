@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mirror Company</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
 </head>
 <body>
     <header>
         <a href="index.html"><img src="images/banner2.jpg" alt="Company Banner"></a>
     </header>
-    <nav>
+    <nav class="tablet-desktop">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="team.html">Our Team</a>
@@ -21,14 +22,85 @@
         <a href="faqs.html">FAQs</a>
         <a href="contact.html">Contact Us</a>
     </nav>
+    <nav class="mobile-nav">
+        <div id="menu-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="team.html">Our Team</a>
+            <a href="specials.html">Specials</a>
+            <a href="training.html">Training</a>
+            <a href="media.html">Media</a>
+            <a href="faqs.html">FAQs</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <a class="menu-icon" onclick="hamburgur()">
+          <div>&#9776;</div>
+        </a>
+    </nav>
     <main>
-       <h1>FAQ</h1>
-       
+        <h1>Frequently Asked Questions</h1>
+        <button class="accordion">Order and Shipping Questions</button>
+        <div class="panel">
+           <dl>
+                <dt><b>How do I place an order?</b></dt>
+                <dd>You can place an order through our website or by contacting us directly via email or phone. Our team will assist you with the ordering process.</dd>
+                
+                <dt><b>What payment methods do you accept</b></dt>
+                <dd>We accept various payment methods, including credit/debit cards, PayPal, and bank transfers. All payment options are available at checkout.</dd>
+                
+                <dt><b>How long will it take to receive my order?</b></dt>
+                <dd>Delivery times vary based on your location and the type of mirror ordered. Standard delivery typically takes 5-7 business days, while custom mirrors may take longer.</dd>
+            </dl>
+        </div>
+
+        <button class="accordion">Do you offer international shipping?</button>
+        <div class="panel">
+          <p>Yes, we offer international shipping. Please contact us for details on shipping rates and delivery times for your location.</dd>
+                </p>
+        </div>
+
+        <button class="accordion">What is your return policy?</button>
+        <div class="panel">
+          <p>We have a 30-day return policy for standard mirrors. Custom mirrors are non-refundable. For more details, please visit our Return Policy page or contact us directly </p>
+        </div>
+
+        <button class="accordion">Maintenance and Care Questions</button>
+        <div class="panel">
+          <dl>
+                <dt><b>How do I clean my mirror?</b></dt>
+                <dd>To clean your mirror, use a soft, lint-free cloth and a non-abrasive glass cleaner. Avoid using harsh chemicals or abrasive materials that can damage the mirror's surface.</dd>
+                
+                <dt><b>How do I prevent my bathroom mirror from fogging?</b></dt>
+                <dd>Our bathroom mirrors come with anti-fog features. However, you can also use a mixture of water and vinegar to clean the mirror, which helps reduce fogging.</dd>
+                
+                <dt><b>Can I hang the mirror myself?</b></dt>
+                <dd>Yes, our mirrors come with easy-to-follow installation instructions. However, for larger or heavier mirrors, we recommend professional installation.</dd>
+            </dl>
+        </div>
+
+        <button class="accordion">What types of mirrors do you offer?</button>
+        <div class="panel">
+            <dl>
+                <dt><b>What types of mirrors do you offer?</b></dt>
+                <dd>We offer a wide range of mirrors, including bathroom mirrors, decorative mirrors, custom mirrors, and framed mirrors.</dd>
+                
+                <dt><b>Do you provide custom mirror designs?</b></dt>
+                <dd>Yes, we offer custom mirror services where you can choose the size, shape, and frame to create a mirror that fits your specific needs and style.</dd>
+                
+                <dt><b>Are your mirrors of high quality?</b></dt>
+                <dd>Yes, we are committed to providing high-quality mirrors made from the finest materials and crafted with precision to ensure durability and style.</dd>
+                
+                <dt><b>Can I see the mirrors before purchasing?</b></dt>
+                <dd>Yes, you can visit our showroom to see our collection of mirrors in person. We also provide detailed images and descriptions on our website.</dd>
+            </dl>
+        </div>
+
     </main>
     <footer>
         &copy; Copyright 2099. All Rights Reserved.<br>
         Request information: <a href="mailto:info@mirrorcompany.com">info@mirrorcompany.com</a><br>
         Simranjeet Kaur - c0927703
     </footer>
+    <script type="text/javascript" src="scripts/script.js"></script>
 </body>
 </html>

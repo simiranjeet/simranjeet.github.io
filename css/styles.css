@@ -262,9 +262,9 @@ footer {
         width: 70%;
         margin:0 auto;
     }
-    .tablet-desktop{
+    /*.tablet-desktop{
         display: none;
-    }
+    }*/
 
 
 }
@@ -358,5 +358,11 @@ footer {
 @media screen and (min-width: 550px) {
     .mobile-nav {
         display: none;
+    }
+}
+
+@media (max-width: 549px) {
+    .tablet-desktop {
+        display: none; /* Hide on small mobile screens */
     }
 }

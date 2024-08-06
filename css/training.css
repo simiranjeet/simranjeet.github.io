@@ -121,9 +121,9 @@ footer a:hover {
         padding: 10px;
         font-size: 1.1em; /* Increase font size for navigation links on smaller screens */
     }
-    .tablet-desktop{
+    /*.tablet-desktop{
         display: none;
-    }
+    }*/
    
 }
 @media (max-width: 480px) {
@@ -178,4 +178,8 @@ footer a:hover {
     }
 }
 
-
+@media (max-width: 549px) {
+    .tablet-desktop {
+        display: none; /* Hide on small mobile screens */
+    }
+}

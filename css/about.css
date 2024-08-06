@@ -131,9 +131,9 @@ footer a:hover {
     footer {
         font-size: 0.9em;
     }
-     .tablet-desktop{
+    /* .tablet-desktop{
         display: none;
-    }
+    }*/
 }
 
 /* Desktop Viewport */
@@ -156,5 +156,11 @@ footer a:hover {
 @media screen and (min-width: 550px) {
     .mobile-nav {
         display: none;
+    }
+}
+
+@media (max-width: 549px) {
+    .tablet-desktop {
+        display: none; /* Hide on small mobile screens */
     }
 }
